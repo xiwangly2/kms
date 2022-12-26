@@ -52,7 +52,7 @@ ln -sv /usr/local/vlmcsd-2018/ /usr/local/KMS;\
 echo "export PATH=/usr/local/KMS/binaries/Linux/intel/static:\$PATH" > /etc/profile.d/vlmcs.sh;\
 source /etc/profile.d/vlmcs.sh;\
 chmod +x /usr/local/KMS/binaries/Linux/intel/static/*;\
-wget --no-check-certificate https://pan.xiwangly.top/d/%E6%9C%AC%E5%9C%B0%E7%A3%81%E7%9B%98/kms.sh -O /etc/init.d/kms;\
+wget --no-check-certificate https://github.com/xiwangly2/kms/raw/main/src/kms.sh -O /etc/init.d/kms;\
 chmod +x /etc/init.d/kms;\
 update-rc.d kms defaults;\
 vlmcsd-x64-musl-static;\
