@@ -26,7 +26,7 @@ ENV TZ Asia/Shanghai
 
 RUN /bin/sh -c 'sed -i "s/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g" /etc/apk/repositories;\
 apk --no-cache add net-tools procps wget iproute2 unzip tzdata;\
-wget --no-check-certificate https://pan.xiwangly.top/d/%E6%9C%AC%E5%9C%B0%E7%A3%81%E7%9B%98/vlmcsd-2018.zip;\
+wget --no-check-certificate https://github.com/xiwangly2/kms/raw/main/src/vlmcsd-2018.zip;\
 unzip -q vlmcsd-2018.zip -d /usr/local/;\
 ln -sv /usr/local/vlmcsd-2018/ /usr/local/KMS;\
 chmod +x /usr/local/KMS/binaries/Linux/intel/static/*;\
@@ -45,7 +45,7 @@ RUN /bin/bash -c 'sed -i "s/deb.debian.org/mirrors.ustc.edu.cn/g" /etc/apt/sourc
 apt-get update;\
 export DEBIAN_FRONTEND=noninteractive;\
 apt-get install -y net-tools procps wget init iproute2 unzip;\
-wget --no-check-certificate https://pan.xiwangly.top/d/%E6%9C%AC%E5%9C%B0%E7%A3%81%E7%9B%98/vlmcsd-2018.zip;\
+wget --no-check-certificate https://github.com/xiwangly2/kms/raw/main/src/vlmcsd-2018.zip;\
 unzip -q vlmcsd-2018.zip -d /usr/local/;\
 rm -f vlmcsd-2018.zip;\
 ln -sv /usr/local/vlmcsd-2018/ /usr/local/KMS;\
